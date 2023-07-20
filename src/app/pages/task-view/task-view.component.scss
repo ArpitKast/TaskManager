@@ -64,10 +64,10 @@
             background: $light;
         }
 
-        &.is-active {
-            background-color: #cff8ef;
-            color: $dark-green;
-        }
+        // &.is-active {
+        //     background-color: #cff8ef;
+        //     color: $dark-green;
+        // }
     }
 }
 
@@ -137,4 +137,8 @@
 .completed {
         text-decoration: line-through;
         opacity: 0.8;
+    }
+    .is-active {
+        background-color: #cff8ef;
+        color: $dark-green;
     }

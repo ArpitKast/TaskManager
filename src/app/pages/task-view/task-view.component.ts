@@ -10,13 +10,13 @@ import { TaskService } from 'src/app/task.service';
 export class TaskViewComponent implements OnInit{
   lists:any;
   tasks:any;
-  listId: any;
+
   constructor(private taskService : TaskService, private route: ActivatedRoute){}
   
   ngOnInit() {
     this.route.params.subscribe((params)=>{
       console.log(params)
-      this.listId = params['listId']
+    
       if(params['listId']){
         this.taskService.getTasks(params['listId']).subscribe((res)=>{
           console.log(res)
